@@ -73,6 +73,16 @@
                 ],
                 buttonText: 'Get Pro',
                 buttonVariant: 'primary',
+            }; const enterprisePlan = {
+                title: 'Enterprise',
+                price: '$100/mo.',
+                includesText: 'Everything in Pro, plus:',
+                features: [
+                    'Unlimited Agent requests',
+                    'Unlimited Tab completions',
+                ],
+                buttonText: 'Get Enterprise',
+                buttonVariant: 'secondary',
             };
 
             return (
@@ -84,6 +94,7 @@
                         {/* This is the same as writing: title="Hobby" price="Free" includesText="Includes:" etc. */}
                         <PricingCard {...hobbyPlan} />
                         <PricingCard {...proPlan} />
+                        <PricingCard {...enterprisePlan} />
                     </div>
                 </>
             );
